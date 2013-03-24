@@ -20,8 +20,11 @@ source bin/activate
 pip install -r requirements.pip
 
 export PYTHONPATH=./src:$PYTHONPATH
+
 export DEVELOPMENT=1
+
 cd src
 
 python manage.py syncdb
+
 python manage.py runserver
