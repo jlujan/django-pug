@@ -1,4 +1,6 @@
+import os
 from pug.conf.common import *
+
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
