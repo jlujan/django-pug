@@ -8,3 +8,5 @@ include
 .Python
 *.db
 
+.sass-cache
+*.scssc
