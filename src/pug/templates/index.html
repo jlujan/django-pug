@@ -13,7 +13,7 @@
 
 </head>
 <body>
-{{ currentdate }}
+<!-- {{ currentdate}} -->
   <!--Navigation-->
   <nav class="top-bar">
     <ul class="title-area">
@@ -45,7 +45,7 @@
   </nav>
   <!--/Navigation-->
 
-  <div  style="background: url('images/dallas-bg.jpg') no-repeat 50% 25%; height: 300px; background-size: cover;">
+  <div  style="background: url('{{ STATIC_URL }}img/dallas-bg.jpg') no-repeat 50% 25%; height: 300px; background-size: cover;">
       <div class="row">
 			<div class='large-12 small-12'><h2 class="centered" style="color:white; text-shadow: 0 1px #fff;">Come and meet the Dallas Python Community.</h2>
             <p class="centered" style="color:white;">A Python user group active in the Dallas-Fort Worth area since 2004.</p></div>
@@ -97,12 +97,12 @@ Come late if you need to, we'll still be there!</p>
 
   <script>
   document.write('<script src=' +
-  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  ('__proto__' in {} ? '{{ STATIC_URL }}js/vendor/zepto' : '{{ STATIC_URL }}js/vendor/jquery') +
   '.js><\/script>')
   </script>
 
   <script src="{{ STATIC_URL }}js/foundation.min.js"></script>
-  <!--
+  <!-- -->
 
   <script src="{{ STATIC_URL }}js/foundation/foundation.js"></script>
 
@@ -132,7 +132,6 @@ Come late if you need to, we'll still be there!</p>
 
   <script src="{{ STATIC_URL }}js/foundation/foundation.topbar.js"></script>
 
-  -->
 
   <script>
     $(document).foundation();
