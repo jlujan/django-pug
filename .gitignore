@@ -10,3 +10,6 @@ include
 
 .sass-cache
 *.scssc
+
+src/static/sass/*.css
+src/static/sass/config.rb
