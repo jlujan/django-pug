@@ -8,6 +8,8 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', 'pug.apps.homepage.views.index', name='index'),
+    url(r'^contact$', 'pug.apps.homepage.views.contact', name='contact'),
+    url(r'^blog$', 'pug.apps.homepage.views.blog', name='blog'),
     # url(r'^static/(?P<path>.*)$', 'django.views.static.serve',{'document_root': settings.STATIC_ROOT, 'show_indexes' : False}),
 
 
